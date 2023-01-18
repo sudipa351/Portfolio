@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f4c7987317.js" crossorigin="anonymous"></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="main-logo"><span><img src="./images/newton.jpg" class="logo"></span><span> Newton School</span></div>    
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                     
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+                
+            </nav>
+            
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>I'm <span>Sudipa Acharya</span></h1>
+            </div>
+        </div>
+    </div>
+    
+<!----------------------------- about ------------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/1647608325898.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>To succeed an environment of growth and excellence and earn a job which provides me job satisfaction and self development and help me to achieve personal as well as organisational development  </p>
+
+                    <div class="tab-tities">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        
+                        <ul>
+                            <li>Data Structure & Algorithm</li>
+                            <li>JAVA</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>React JS</li>
+                            <li>Redux</li>
+                            <li>Node Js</li>
+                            <li>Express Js</li>
+                            
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        
+                        <ul>
+                            <li><span>2021(june) - 2022(jan) </span><br>Web Developer (Graps Next Social Private Limited)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Present</span><br> FUll Stack Web Development course (Newton School)</li>
+                            <li><span>2021</span><br> FUll Stack Web Development course (Naresh IT)</li>
+                            <li><span>2020</span><br>B-tech (Electrical Engg.)</li>
+                            <li><span>2016</span><br>Intermidiate (Science)</li>
+                            <li><span>2014</span><br>Matriculation</li>
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------------------ services ------------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design is a multi-disciplinary job, where you'd need not only knowledge in design (typography, color theory) but also skills in developing a website (HTML, CSS, JavaScript). Some web designers are also involved in interaction design when they code for animations and interactions using CSS and/or JavaScript.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>
+                        UI refers to the screens, buttons, toggles, icons, and other visual elements that you interact with when using a website, app, or other electronic device. UX refers to the entire interaction you have with a product, including how you feel about the interaction.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p> App design is an ongoing process comprising user experience (UX) and user interface (UI) elements. Designers ideate, define solutions, create the app's flow and structure, and make stylistic choices from colors to fonts. Designers base choices on user research and feedback.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------------------------------- portfolio --------------------------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented peoplr around the world. Download it from play store.</p>
+                        <a href="a"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to the talented peoplr around the world. Download it from play store.</p>
+                        <a href="a"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to the talented peoplr around the world. Download it from play store.</p>
+                        <a href="a"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!--------------------------------------------- contact ------------------------------------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> sudipaacharya351@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 7978837141</p>
+                    <div class="social-icons">
+                        <a href="@sudipa_acharya"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://app.slack.com/"><i class="fa-brands fa-slack"></i></a>
+                        <a href="https://github.com/sudipa351/"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/sudipa-acharya-4a29a3196/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://web.telegram.org"><i class="fa-brands fa-telegram"></i></a>
+                       
+                         
+                    </div>
+                    <a href="" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>@ Copyright Sudipa Acharya <i class="fa-solid fa-heart"></i> Thank You....</p>
+        </div>
+    </div>
+
+    <script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab (tabname){
+            for (tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+
+    </script>
+
+    <script>
+
+       var sidemeu = document.getElementById("sidemenu");
+
+       function openmenu() {
+        sidemeu.style.right = "0";
+       }
+       function closemenu() {
+        sidemeu.style.right = "-200px";
+       }
+
+    </script>
+    
+</body>
+</html>
+
+
+
